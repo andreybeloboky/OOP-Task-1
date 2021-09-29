@@ -13,8 +13,10 @@ public class Main {
         System.out.println("Enter number caw(s)");
         int cowNumber = scanner.nextInt();
         if (catNumber >= 0 && dogNumber >= 0 && cowNumber >= 0) {
-        System.out.println("Number cats: " + catNumber);
-        System.out.println("Number dogs: " + dogNumber);
-        System.out.println("Number caws: " + cowNumber);
-    }}
+            System.out.println("Number cats: " + catNumber);
+            System.out.println("Number dogs: " + dogNumber);
+            System.out.println("Number caws: " + cowNumber);
+            Cat[] cats = new Cat[catNumber];
+        }
+    }
 }
