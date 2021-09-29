@@ -12,5 +12,9 @@ public class Main {
         int dogNumber = scanner.nextInt();
         System.out.println("Enter number caw(s)");
         int cowNumber = scanner.nextInt();
+
+        System.out.println("Number cats: " + catNumber);
+        System.out.println("Number dogs: " + dogNumber);
+        System.out.println("Number caws: " + cowNumber);
     }
 }
