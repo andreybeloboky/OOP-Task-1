@@ -1,8 +1,9 @@
 package com.company;
 
 public class Cow {
-    int age;
-    String name;
+
+    private int age;
+    private String name;
 
     /**
      * @param age  - age cow have written user;

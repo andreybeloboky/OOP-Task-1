@@ -3,7 +3,7 @@ package com.company;
 public class Cat {
 
     private int age;
-    String name;
+    private String name;
 
     /**
      * @param age  -age cat have written user;

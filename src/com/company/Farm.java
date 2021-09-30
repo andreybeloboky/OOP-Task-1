@@ -1,6 +1,7 @@
 package com.company;
 
 public class Farm {
+
     private Cat[] cats;
     private Dog[] dogs;
     private Cow[] cows;
@@ -16,7 +17,7 @@ public class Farm {
         this.cows = caws;
     }
 
-    int totalAgeCats = 0;
+    private int totalAgeCats = 0;
 
     public void cats() {
         for (Cat cat : cats) {
@@ -25,7 +26,7 @@ public class Farm {
         }
     }
 
-    int totalAgeDogs = 0;
+    private int totalAgeDogs = 0;
 
     public void dogs() {
         for (Dog dog : dogs) {
@@ -34,7 +35,7 @@ public class Farm {
         }
     }
 
-    int totalAgeCows = 0;
+    private int totalAgeCows = 0;
 
     public void cows() {
         for (Cow cow : cows) {
