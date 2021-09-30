@@ -17,8 +17,50 @@ public class Main {
             System.out.println("Number dogs: " + dogNumber);
             System.out.println("Number caws: " + cowNumber);
             Cat[] cats = new Cat[catNumber];
-            Dog[] dogs = new Dog [dogNumber];
-            Cow[] cows = new Cow [cowNumber];
+            Dog[] dogs = new Dog[dogNumber];
+            Cow[] cows = new Cow[cowNumber];
+            if (catNumber > 0) {
+                System.out.println("Cat:");
+                for (int i = 0; i < catNumber; i++) {
+                    int catAge = age();
+                    String catName = name();
+                    cats[i] = new Cat(catAge, catName);
+                }
+            }
+            if (dogNumber > 0) {
+                System.out.println("Dog:");
+                for (int j = 0; j < dogNumber; j++) {
+                    int dogAge = age();
+                    String dogName = name();
+                    dogs[j] = new Dog(dogAge, dogName);
+                }
+            }
+            if (cowNumber > 0) {
+                System.out.println("Caw:");
+                for (int k = 0; k < cowNumber; k++) {
+                    int cowAge = age();
+                    String cowName = name();
+                    cows[k] = new Cow(cowAge, cowName);
+                }
+            }
         }
+    }
+
+    /**
+     * @return - filling cell age array;
+     */
+    public static int age() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter age");
+        return scanner.nextInt();
+    }
+
+    /**
+     * @return - filling cell String array;
+     */
+    public static String name() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter name");
+        return scanner.next();
     }
 }
