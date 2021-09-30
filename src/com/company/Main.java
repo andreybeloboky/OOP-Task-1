@@ -47,6 +47,7 @@ public class Main {
             farm.cats();
             farm.dogs();
             farm.cows();
+            farm.middleValueAge();
         } else {
             System.out.println("All value should be more than 0");
         }

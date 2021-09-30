@@ -15,4 +15,35 @@ public class Farm {
         this.dogs = dogs;
         this.cows = caws;
     }
+
+    int totalAgeCats = 0;
+
+    public void cats() {
+        for (Cat cat : cats) {
+            int age = cat.ageCat();
+            totalAgeCats += age;
+        }
+    }
+
+    int totalAgeDogs = 0;
+
+    public void dogs() {
+        for (Dog dog : dogs) {
+            int age = dog.ageDog();
+            totalAgeDogs += age;
+        }
+    }
+
+    int totalAgeCows = 0;
+
+    public void cows() {
+        for (Cow cow : cows) {
+            int age = cow.ageCow();
+            totalAgeCows += age;
+        }
+    }
+
+    public void middleValueAge() {
+        System.out.println((totalAgeCats + totalAgeDogs + totalAgeCows) / (cats.length + dogs.length + cows.length));
+    }
 }
