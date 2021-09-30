@@ -43,6 +43,12 @@ public class Main {
                     cows[k] = new Cow(cowAge, cowName);
                 }
             }
+            Farm farm = new Farm(cats, dogs, cows);
+            farm.cats();
+            farm.dogs();
+            farm.cows();
+        } else {
+            System.out.println("All value should be more than 0");
         }
     }
 
