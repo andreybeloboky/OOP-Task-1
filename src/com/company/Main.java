@@ -17,6 +17,7 @@ public class Main {
             System.out.println("Number dogs: " + dogNumber);
             System.out.println("Number caws: " + cowNumber);
             Cat[] cats = new Cat[catNumber];
+            Dog[] dogs = new Dog [dogNumber];
         }
     }
 }
