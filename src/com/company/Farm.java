@@ -44,6 +44,18 @@ public class Farm {
         }
     }
 
+    public void setAddCat() {
+        cats = cats;
+    }
+
+    public void setAddDogs() {
+        dogs = dogs;
+    }
+
+    public void setAddCows() {
+        cows = cows;
+    }
+
     public int countAnimals() {
         return cats.length + dogs.length + cows.length;
     }
