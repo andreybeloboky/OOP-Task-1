@@ -18,6 +18,9 @@ public class Farm {
         this.cats = cats;
         this.dogs = dogs;
         this.cows = caws;
+        this.calculateTotalAgeOfCats();
+        this.calculateTotalAgeOfDogs();
+        this.calculateTotalAgeOfCows();
     }
 
 

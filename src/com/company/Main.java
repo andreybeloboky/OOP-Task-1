@@ -44,9 +44,6 @@ public class Main {
                 }
             }
             Farm farm = new Farm(cats, dogs, cows);
-            farm.calculateTotalAgeOfCats();
-            farm.calculateTotalAgeOfDogs();
-            farm.calculateTotalAgeOfCows();
             int middleAge = farm.calculateMiddleAge();
             System.out.println(middleAge);
             int countAnimals = farm.countAnimals();
