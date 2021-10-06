@@ -22,24 +22,24 @@ public class Main {
             if (catNumber > 0) {
                 System.out.println("Cat:");
                 for (int i = 0; i < catNumber; i++) {
-                    int catAge = age();
-                    String catName = name();
+                    int catAge = addAge();
+                    String catName = addAName();
                     cats[i] = new Cat(catAge, catName);
                 }
             }
             if (dogNumber > 0) {
                 System.out.println("Dog:");
                 for (int j = 0; j < dogNumber; j++) {
-                    int dogAge = age();
-                    String dogName = name();
+                    int dogAge = addAge();
+                    String dogName = addAName();
                     dogs[j] = new Dog(dogAge, dogName);
                 }
             }
             if (cowNumber > 0) {
                 System.out.println("Caw:");
                 for (int k = 0; k < cowNumber; k++) {
-                    int cowAge = age();
-                    String cowName = name();
+                    int cowAge = addAge();
+                    String cowName = addAName();
                     cows[k] = new Cow(cowAge, cowName);
                 }
             }
@@ -49,6 +49,8 @@ public class Main {
             farm.calculateTotalAgeOfCows();
             int middleAge = farm.calculateMiddleAge();
             System.out.println(middleAge);
+            int countAnimals = farm.countAnimals();
+            System.out.println(countAnimals);
         } else {
             System.out.println("All value should be more than 0");
         }
@@ -57,7 +59,7 @@ public class Main {
     /**
      * @return - filling cell age array;
      */
-    public static int age() {
+    public static int addAge() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter age");
         return scanner.nextInt();
@@ -66,7 +68,7 @@ public class Main {
     /**
      * @return - filling cell String array;
      */
-    public static String name() {
+    public static String addAName() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter name");
         return scanner.next();

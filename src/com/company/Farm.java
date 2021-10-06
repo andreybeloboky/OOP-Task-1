@@ -44,6 +44,10 @@ public class Farm {
         }
     }
 
+    public int countAnimals() {
+        return cats.length + dogs.length + cows.length;
+    }
+
     public int calculateMiddleAge() {
         return (totalAgeCats + totalAgeDogs + totalAgeCows) / (cats.length + dogs.length + cows.length);
     }
