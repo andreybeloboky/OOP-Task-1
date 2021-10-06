@@ -5,6 +5,9 @@ public class Farm {
     private Cat[] cats;
     private Dog[] dogs;
     private Cow[] cows;
+    private int totalAgeCats = 0;
+    private int totalAgeDogs = 0;
+    private int totalAgeCows = 0;
 
     /**
      * @param cats - array cats from ages and names;
@@ -17,27 +20,24 @@ public class Farm {
         this.cows = caws;
     }
 
-    private int totalAgeCats = 0;
 
-    public void cats() {
+    public void calculateTotalAgeOfCats() {
         for (Cat cat : cats) {
             int age = cat.ageCat();
             totalAgeCats += age;
         }
     }
 
-    private int totalAgeDogs = 0;
 
-    public void dogs() {
+    public void calculateTotalAgeOfDogs() {
         for (Dog dog : dogs) {
             int age = dog.ageDog();
             totalAgeDogs += age;
         }
     }
 
-    private int totalAgeCows = 0;
 
-    public void cows() {
+    public void calculateTotalAgeOfCows() {
         for (Cow cow : cows) {
             int age = cow.ageCow();
             totalAgeCows += age;
