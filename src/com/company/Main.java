@@ -47,7 +47,8 @@ public class Main {
             farm.calculateTotalAgeOfCats();
             farm.calculateTotalAgeOfDogs();
             farm.calculateTotalAgeOfCows();
-            farm.middleValueAge();
+            int middleAge = farm.calculateMiddleAge();
+            System.out.println(middleAge);
         } else {
             System.out.println("All value should be more than 0");
         }

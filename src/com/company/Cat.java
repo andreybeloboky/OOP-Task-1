@@ -17,7 +17,7 @@ public class Cat {
     /**
      * @return - age cat;
      */
-    public int ageCat() {
+    public int getAgeCat() {
         return age;
     }
 }

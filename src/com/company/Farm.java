@@ -23,7 +23,7 @@ public class Farm {
 
     public void calculateTotalAgeOfCats() {
         for (Cat cat : cats) {
-            int age = cat.ageCat();
+            int age = cat.getAgeCat();
             totalAgeCats += age;
         }
     }
@@ -31,7 +31,7 @@ public class Farm {
 
     public void calculateTotalAgeOfDogs() {
         for (Dog dog : dogs) {
-            int age = dog.ageDog();
+            int age = dog.getAgeDog();
             totalAgeDogs += age;
         }
     }
@@ -39,12 +39,12 @@ public class Farm {
 
     public void calculateTotalAgeOfCows() {
         for (Cow cow : cows) {
-            int age = cow.ageCow();
+            int age = cow.getAgeCow();
             totalAgeCows += age;
         }
     }
 
-    public void middleValueAge() {
-        System.out.println((totalAgeCats + totalAgeDogs + totalAgeCows) / (cats.length + dogs.length + cows.length));
+    public int calculateMiddleAge() {
+        return (totalAgeCats + totalAgeDogs + totalAgeCows) / (cats.length + dogs.length + cows.length);
     }
 }
