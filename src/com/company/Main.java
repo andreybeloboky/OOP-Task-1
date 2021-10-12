@@ -44,6 +44,7 @@ public class Main {
                 }
             }
             Farm farm = new Farm(cats, dogs, cows);
+            farm.addCat(new Cat(5, "Alo"));
             int middleAge = farm.calculateMiddleAge();
             System.out.println(middleAge);
             int countAnimals = farm.countAnimals();

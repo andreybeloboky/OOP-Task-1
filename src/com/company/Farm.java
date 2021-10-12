@@ -5,9 +5,9 @@ public class Farm {
     private Cat[] cats;
     private Dog[] dogs;
     private Cow[] cows;
-    private int totalAgeCats = 0;
-    private int totalAgeDogs = 0;
-    private int totalAgeCows = 0;
+    private int totalAgeCats;
+    private int totalAgeDogs;
+    private int totalAgeCows;
 
     /**
      * @param cats - array cats from ages and names;
@@ -18,45 +18,71 @@ public class Farm {
         this.cats = cats;
         this.dogs = dogs;
         this.cows = caws;
-        this.calculateTotalAgeOfCats();
-        this.calculateTotalAgeOfDogs();
-        this.calculateTotalAgeOfCows();
+        this.totalAgeCats = this.calculateTotalAgeOfCats();
+        this.totalAgeDogs = this.calculateTotalAgeOfDogs();
+        this.totalAgeCows = this.calculateTotalAgeOfCows();
     }
 
 
-    public void calculateTotalAgeOfCats() {
+    public int calculateTotalAgeOfCats() {
+        int totalAge = 0;
         for (Cat cat : cats) {
             int age = cat.getAgeCat();
-            totalAgeCats += age;
+            totalAge +=  age;
         }
+        return totalAge;
     }
 
 
-    public void calculateTotalAgeOfDogs() {
+    public int calculateTotalAgeOfDogs() {
+        int totalAge = 0;
         for (Dog dog : dogs) {
             int age = dog.getAgeDog();
-            totalAgeDogs += age;
+            totalAge +=  age;
         }
+        return totalAge;
     }
 
 
-    public void calculateTotalAgeOfCows() {
+    public int calculateTotalAgeOfCows() {
+        int totalAge = 0;
         for (Cow cow : cows) {
             int age = cow.getAgeCow();
-            totalAgeCows += age;
+            totalAge +=  age;
         }
+        return totalAge;
     }
 
-    public void setAddCat() {
-        cats = cats;
+    public void addCat(Cat cat) {
+        Cat[] cats1 = new Cat[cats.length + 1];
+        for (int i = 0; i < cats.length; i++) {
+            cats1[i] = cats[i];
+        }
+        cats1[cats.length] = cat;
+
+
+        this.totalAgeCats = calculateTotalAgeOfCats();
     }
 
-    public void setAddDogs() {
-        dogs = dogs;
+    public void addDogs(Dog dog) {
+        Dog[] dog1 = new Dog[cats.length + 1];
+        for (int i = 0; i < cats.length; i++) {
+            dog1[i] = dogs[i];
+        }
+        dog1[cats.length] = dog;
+
+        this.totalAgeDogs = calculateTotalAgeOfDogs();
     }
 
-    public void setAddCows() {
-        cows = cows;
+    public void addCows(Cow cow) {
+        Cow[] cows1 = new Cow[cats.length + 1];
+        for (int i = 0; i < cats.length; i++) {
+            cows1[i] = cows[i];
+        }
+        cows1[cats.length] = cow;
+
+
+        this.totalAgeCows = calculateTotalAgeOfCows();
     }
 
     public int countAnimals() {
