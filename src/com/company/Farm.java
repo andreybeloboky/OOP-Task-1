@@ -27,7 +27,7 @@ public class Farm {
     public int calculateTotalAgeOfCats() {
         int totalAge = 0;
         for (Cat cat : cats) {
-            int age = cat.getAgeCat();
+            int age = cat.getAge();
             totalAge +=  age;
         }
         return totalAge;
@@ -37,7 +37,7 @@ public class Farm {
     public int calculateTotalAgeOfDogs() {
         int totalAge = 0;
         for (Dog dog : dogs) {
-            int age = dog.getAgeDog();
+            int age = dog.getAge();
             totalAge +=  age;
         }
         return totalAge;
@@ -47,7 +47,7 @@ public class Farm {
     public int calculateTotalAgeOfCows() {
         int totalAge = 0;
         for (Cow cow : cows) {
-            int age = cow.getAgeCow();
+            int age = cow.getAge();
             totalAge +=  age;
         }
         return totalAge;

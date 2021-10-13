@@ -17,7 +17,7 @@ public class Dog {
     /**
      * @return - age dog;
      */
-    public int getAgeDog() {
+    public int getAge() {
         return age;
     }
 }
